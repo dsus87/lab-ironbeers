@@ -1,0 +1,29 @@
+<h1>Random Beer Page</h1>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beers</title>
+</head>
+
+<body>
+   <h1>Random Beer Page</h1>
+
+     
+
+{{#each beers}}
+      <h2>{{this.name}}</h2>
+       <img src="{{this.image_url}}" alt="{{this.name}}">
+      <p><strong>Description:</strong> {{this.description}}</p>
+      <p><strong>Tag Line:</strong> {{this.tagline}}</p>
+       <p><strong>Food Pairing:</strong> {{this.foodpairing}}</p>
+        <p><strong>Brewer Tips:</strong> {{this.brewertips}}</p>
+{{/each}}
+ 
+
+
+</body>
+</html>
